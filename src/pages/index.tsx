@@ -1,6 +1,9 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import { useAuth } from '@/hooks'
 
 export default function Home() {
+  const {user, logOut} = useAuth();
   return (
     <>
       <Head>
@@ -10,7 +13,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        
+        { user ? ( 
+          <div> 
+            Hola
+            <button onClick={logOut}>Cerrar sesión</button>
+          </div> 
+        ) : ( 
+          <div>
+            <Link href='/auth/sign-in'>
+              Iniciar sesión
+            </Link>
+          </div>
+        ) }
       </main>
     </>
   )

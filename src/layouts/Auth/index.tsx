@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+
+import { useAuth } from '@/hooks'
 
 interface AuthLayoutProps {
     title: string;
@@ -8,6 +11,12 @@ interface AuthLayoutProps {
 }
 
 export default function SignUpPage({ title, description, children }: AuthLayoutProps) {
+    const { user } = useAuth();
+    const router = useRouter();
+    if(user){
+        router.push('/')
+        return null;
+    }
     return (
     <div className="flex min-h-full flex-col justify-center py-12 sm:px-6 lg:px-8 border">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
