@@ -30,8 +30,6 @@ export const Menu = () => {
         ],
     }
 
-    console.log(navigation)
-
     useEffect(() => {
       (async () => {
         try {
@@ -52,7 +50,7 @@ export const Menu = () => {
     }, [])
     
     return(
-        <div className="hidden h-full lg:flex">
+        <div className="hidden h-full lg:flex z-50">
             <Popover.Group className="inset-x-0 bottom-0 px-4">
                 <div className="flex h-full justify-center space-x-8">
                     {navigation.categories.map((category:any) => (

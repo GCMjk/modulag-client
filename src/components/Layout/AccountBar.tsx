@@ -11,7 +11,7 @@ export const AccountBar = () => {
                 <div className="hidden lg:block lg:flex-1"></div>
 
                 <p className="flex-1 text-center text-sm font-medium text-white lg:flex-none">
-                    Get free delivery on orders over $100
+                    Obtenga envío gratuito en pedidos superiores a $1,000 MXN
                 </p>
 
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
