@@ -10,7 +10,7 @@ interface AuthLayoutProps {
     children: React.ReactNode;
 }
 
-export default function SignUpPage({ title, description, children }: AuthLayoutProps) {
+export const AuthLayout = ({ title, description, children }: AuthLayoutProps) => {
     const { user } = useAuth();
     const router = useRouter();
     if(user){
@@ -18,7 +18,7 @@ export default function SignUpPage({ title, description, children }: AuthLayoutP
         return null;
     }
     return (
-    <div className="flex min-h-full flex-col justify-center py-12 sm:px-6 lg:px-8 border">
+    <div className="flex min-h-full flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
             <Link href="/">
                 <Image

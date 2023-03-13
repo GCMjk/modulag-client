@@ -2,7 +2,7 @@ import Link from 'next/link'
 import * as Yup from 'yup'
 import { useFormik } from 'formik'
 
-import AuthLayout from '@/layouts/Auth'
+import { AuthLayout } from '@/layouts'
 import { Button } from '@/components';
 
 export default function ResetPassPage() {

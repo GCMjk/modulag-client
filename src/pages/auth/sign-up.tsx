@@ -4,7 +4,7 @@ import * as Yup from 'yup'
 import { useFormik } from 'formik'
 
 import { Auth } from '@/api'
-import AuthLayout from '@/layouts/Auth'
+import { AuthLayout } from '@/layouts'
 import { Button } from '@/components'
 
 const auth = new Auth();

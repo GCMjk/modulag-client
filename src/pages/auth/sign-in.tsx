@@ -5,7 +5,7 @@ import { useFormik } from 'formik'
 
 import { Auth } from '@/api'
 import { useAuth } from '@/hooks'
-import AuthLayout from '@/layouts/Auth'
+import { AuthLayout } from '@/layouts'
 import { Button } from '@/components'
 
 const authCtrl = new Auth();

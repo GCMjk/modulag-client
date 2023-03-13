@@ -2,6 +2,9 @@
 
 const nextConfig = {
   reactStrictMode: false,
+  images: {
+    domains: ['modulag-ecommerce.s3.amazonaws.com'],
+  },
 }
 
 module.exports = nextConfig
