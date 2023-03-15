@@ -6,7 +6,7 @@ import { MainLayout } from '@/layouts'
 export default function Home() {
   const {user, logOut} = useAuth();
   return (
-    <MainLayout>
+    <MainLayout titlePage=''>
       { user ? ( 
         <div> 
           Hola

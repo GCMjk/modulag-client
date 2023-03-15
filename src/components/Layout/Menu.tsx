@@ -26,7 +26,7 @@ export const Menu = () => {
             }
         ],
         pages: [
-          { name: 'Productos', href: '/products' },
+          { name: 'Productos', href: '/product' },
         ],
     }
 
